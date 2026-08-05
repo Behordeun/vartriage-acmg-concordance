@@ -30,3 +30,6 @@ logs/
 
 # Generated SVG (keep PDF only)
 figures/*.svg
+
+# manuscript
+manuscript/
