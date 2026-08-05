@@ -32,9 +32,30 @@ def load_stratified() -> dict:
     if not p.exists():
         p = Path(__file__).parent.parent.parent / "vartriage-streaming-acmg" / "results" / "erepo_stratified.json"
     if not p.exists():
-        print(f"ERROR: Cannot find erepo_stratified.json")
+        print("ERROR: Cannot find erepo_stratified.json")
         sys.exit(1)
     return json.loads(p.read_text())
+
+
+def _compute_or_entry(
+    plp: int, blb: int, other_plp: int, other_blb: int, count: int
+) -> dict:
+    if blb == 0 or other_plp == 0:
+        or_val: float = float("inf") if plp > 0 else 0.0
+        p_val = None
+    else:
+        table = np.array([[plp, blb], [other_plp, other_blb]])
+        denom = blb * other_plp
+        or_val = (plp * other_blb) / denom if denom > 0 else float("inf")
+        _, p_val = fisher_exact(table, alternative="two-sided")
+    return {
+        "expert_P_LP": plp,
+        "expert_B_LB": blb,
+        "total": count,
+        "odds_ratio": round(or_val, 2) if or_val != float("inf") else "inf",
+        "p_value": round(p_val, 6) if p_val is not None else None,
+        "pathogenic_fraction": round(plp / count, 4) if count > 0 else 0,
+    }
 
 
 def compute_odds_ratios(stratified: dict) -> dict:
@@ -46,33 +67,16 @@ def compute_odds_ratios(stratified: dict) -> dict:
     relaxed = stratified["relaxed"]
     total_plp = sum(d["expert_P_LP"] for d in relaxed.values())
     total_blb = sum(d["expert_B_LB"] for d in relaxed.values())
-
-    odds_ratios = {}
-    for csq, data in relaxed.items():
-        plp = data["expert_P_LP"]
-        blb = data["expert_B_LB"]
-        other_plp = total_plp - plp
-        other_blb = total_blb - blb
-
-        # 2x2 contingency: [[plp, blb], [other_plp, other_blb]]
-        if blb == 0 or other_plp == 0:
-            or_val = float("inf") if plp > 0 else 0.0
-            p_val = None
-        else:
-            table = np.array([[plp, blb], [other_plp, other_blb]])
-            or_val = (plp * other_blb) / (blb * other_plp) if (blb * other_plp) > 0 else float("inf")
-            _, p_val = fisher_exact(table, alternative="two-sided")
-
-        odds_ratios[csq] = {
-            "expert_P_LP": plp,
-            "expert_B_LB": blb,
-            "total": data["count"],
-            "odds_ratio": round(or_val, 2) if or_val != float("inf") else "inf",
-            "p_value": round(p_val, 6) if p_val is not None else None,
-            "pathogenic_fraction": round(plp / data["count"], 4) if data["count"] > 0 else 0,
-        }
-
-    return odds_ratios
+    return {
+        csq: _compute_or_entry(
+            data["expert_P_LP"],
+            data["expert_B_LB"],
+            total_plp - data["expert_P_LP"],
+            total_blb - data["expert_B_LB"],
+            data["count"],
+        )
+        for csq, data in relaxed.items()
+    }
 
 
 def compute_chi_squared(stratified: dict) -> dict:
@@ -88,13 +92,13 @@ def compute_chi_squared(stratified: dict) -> dict:
         table.append([d["expert_P_LP"], d["expert_B_LB"], max(0, vus)])
 
     table = np.array(table)
-    chi2, p_val, dof, expected = chi2_contingency(table)
+    chi2, p_val, dof, _ = chi2_contingency(table)
 
     return {
         "chi2_statistic": round(float(chi2), 2),
         "p_value": float(p_val),
         "degrees_of_freedom": int(dof),
-        "significant": p_val < 0.001,
+        "significant": bool(p_val < 0.001),
         "interpretation": "Consequence type and expert classification are not independent" if p_val < 0.001 else "No significant association",
     }
 
