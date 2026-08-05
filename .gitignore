@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+
+# Data (large files, symlinked or downloaded)
+data/
+
+# Scratch results (not canonical)
+results/scratch_*
+results/test_*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor history
+.vscode/
+.idea/
+.qodo/
+.history/
+
+# Logs
+logs/
+
+# Build artifacts
+*.zip
+
+# Generated SVG (keep PDF only)
+figures/*.svg
