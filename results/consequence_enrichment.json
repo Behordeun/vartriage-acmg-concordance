@@ -1,0 +1,62 @@
+{
+  "consequence_distribution": {
+    "Missense": 7920,
+    "Synonymous": 3741,
+    "Nonsense": 2238,
+    "Splice_Site": 1410,
+    "Intergenic": 25
+  },
+  "odds_ratios_for_pathogenicity": {
+    "Missense": {
+      "expert_P_LP": 3319,
+      "expert_B_LB": 1594,
+      "total": 7920,
+      "odds_ratio": 2.4,
+      "p_value": 0.0,
+      "pathogenic_fraction": 0.4191
+    },
+    "Synonymous": {
+      "expert_P_LP": 104,
+      "expert_B_LB": 3329,
+      "total": 3741,
+      "odds_ratio": 0.01,
+      "p_value": 0.0,
+      "pathogenic_fraction": 0.0278
+    },
+    "Nonsense": {
+      "expert_P_LP": 2134,
+      "expert_B_LB": 16,
+      "total": 2238,
+      "odds_ratio": 160.25,
+      "p_value": 0.0,
+      "pathogenic_fraction": 0.9535
+    },
+    "Splice_Site": {
+      "expert_P_LP": 918,
+      "expert_B_LB": 285,
+      "total": 1410,
+      "odds_ratio": 2.87,
+      "p_value": 0.0,
+      "pathogenic_fraction": 0.6511
+    },
+    "Intergenic": {
+      "expert_P_LP": 1,
+      "expert_B_LB": 9,
+      "total": 25,
+      "odds_ratio": 0.09,
+      "p_value": 0.006909,
+      "pathogenic_fraction": 0.04
+    }
+  },
+  "chi_squared_test": {
+    "chi2_statistic": 9116.66,
+    "p_value": 0.0,
+    "degrees_of_freedom": 8,
+    "significant": true,
+    "interpretation": "Consequence type and expert classification are not independent"
+  },
+  "key_findings": {
+    "highest_pathogenic_enrichment": "Nonsense",
+    "most_common_consequence": "Missense"
+  }
+}

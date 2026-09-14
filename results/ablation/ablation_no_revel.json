@@ -1,0 +1,92 @@
+{
+  "total_variants": 15334,
+  "data_coverage": {
+    "revel_matched": 0,
+    "revel_coverage_pct": 0.0,
+    "gnomad_matched": 15334
+  },
+  "expert_distribution": {
+    "Pathogenic": 4137,
+    "VUS": 3625,
+    "Likely_Benign": 2711,
+    "Benign": 2522,
+    "Likely_Pathogenic": 2339
+  },
+  "vartriage_distribution": {
+    "VUS": 12373,
+    "Likely_Pathogenic": 2157,
+    "Benign": 804
+  },
+  "pathogenic_detection": {
+    "expert_P_LP_count": 6476,
+    "true_positives": 2073,
+    "false_negatives": 4403,
+    "false_positives": 84,
+    "sensitivity": 0.3201,
+    "ppv": 0.9611
+  },
+  "benign_detection": {
+    "expert_B_LB_count": 5233,
+    "true_positives": 804,
+    "false_negatives": 4429,
+    "false_positives": 0,
+    "sensitivity": 0.1536,
+    "ppv": 1.0
+  },
+  "overall": {
+    "exact_concordance": 0.2942,
+    "binary_concordance": 0.4189
+  },
+  "confusion_matrix": {
+    "Pathogenic": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 1908,
+      "VUS": 2229,
+      "Likely_Benign": 0,
+      "Benign": 0
+    },
+    "Likely_Pathogenic": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 165,
+      "VUS": 2174,
+      "Likely_Benign": 0,
+      "Benign": 0
+    },
+    "VUS": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 78,
+      "VUS": 3547,
+      "Likely_Benign": 0,
+      "Benign": 0
+    },
+    "Likely_Benign": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 4,
+      "VUS": 2703,
+      "Likely_Benign": 0,
+      "Benign": 4
+    },
+    "Benign": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 2,
+      "VUS": 1720,
+      "Likely_Benign": 0,
+      "Benign": 800
+    }
+  },
+  "evidence_tag_distribution": {
+    "PM2": 11164,
+    "PVS1": 2238,
+    "BA1": 804,
+    "BS1": 725
+  },
+  "configuration": {
+    "relaxed_combining": true,
+    "skip_gnomad": false,
+    "skip_vep": false,
+    "revel_disabled": true,
+    "gnomad_cache_hits": 9789,
+    "vep_cache_hits": 15334,
+    "note": "gnomAD and VEP from cache; REVEL disabled (no PP3/BP4)"
+  }
+}

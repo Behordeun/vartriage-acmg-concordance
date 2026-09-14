@@ -1,0 +1,124 @@
+{
+  "tag_frequency": {
+    "PM2": {
+      "count": 11164,
+      "pct_of_total": 72.81
+    },
+    "PP3_Moderate": {
+      "count": 3786,
+      "pct_of_total": 24.69
+    },
+    "PVS1": {
+      "count": 2238,
+      "pct_of_total": 14.6
+    },
+    "PP3": {
+      "count": 930,
+      "pct_of_total": 6.06
+    },
+    "BA1": {
+      "count": 804,
+      "pct_of_total": 5.24
+    },
+    "BS1": {
+      "count": 725,
+      "pct_of_total": 4.73
+    },
+    "BP4_Moderate": {
+      "count": 717,
+      "pct_of_total": 4.68
+    },
+    "BP4": {
+      "count": 472,
+      "pct_of_total": 3.08
+    }
+  },
+  "tag_ranking": [
+    "PM2",
+    "PP3_Moderate",
+    "PVS1",
+    "PP3",
+    "BA1",
+    "BS1",
+    "BP4_Moderate",
+    "BP4"
+  ],
+  "combining_rule_impact": {
+    "relaxed_sensitivity": 0.6895,
+    "strict_sensitivity": 0.6895,
+    "delta_sensitivity": 0.0,
+    "relaxed_tp": 4465,
+    "strict_tp": 4465,
+    "variants_gained_by_relaxed": 0
+  },
+  "per_consequence_sensitivity": {
+    "relaxed": {
+      "Missense": {
+        "path_sensitivity": 0.718,
+        "path_tp": 2383,
+        "expert_P_LP": 3319
+      },
+      "Nonsense": {
+        "path_sensitivity": 0.9719,
+        "path_tp": 2074,
+        "expert_P_LP": 2134
+      },
+      "Splice_Site": {
+        "path_sensitivity": 0.0087,
+        "path_tp": 8,
+        "expert_P_LP": 918
+      },
+      "Synonymous": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 104
+      },
+      "Intergenic": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 1
+      }
+    },
+    "strict": {
+      "Missense": {
+        "path_sensitivity": 0.718,
+        "path_tp": 2383,
+        "expert_P_LP": 3319
+      },
+      "Nonsense": {
+        "path_sensitivity": 0.9719,
+        "path_tp": 2074,
+        "expert_P_LP": 2134
+      },
+      "Splice_Site": {
+        "path_sensitivity": 0.0087,
+        "path_tp": 8,
+        "expert_P_LP": 918
+      },
+      "Synonymous": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 104
+      },
+      "Intergenic": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 1
+      }
+    }
+  },
+  "key_findings": {
+    "most_common_tag": "PM2",
+    "pathogenic_driver_tags": [
+      "PVS1",
+      "PP3_Moderate",
+      "PM2"
+    ],
+    "benign_driver_tags": [
+      "BA1",
+      "BS1",
+      "BP4_Moderate"
+    ],
+    "relaxed_vs_strict_gain": 0
+  }
+}

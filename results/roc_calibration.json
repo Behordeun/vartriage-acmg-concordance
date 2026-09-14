@@ -1,0 +1,148 @@
+{
+  "revel": {
+    "n_labeled": 5156,
+    "n_positive": 3517,
+    "n_negative": 1639,
+    "roc_auc": 0.9202,
+    "average_precision": 0.9608,
+    "optimal_threshold_youden": 0.604,
+    "optimal_sensitivity": 0.876,
+    "optimal_specificity": 0.8725,
+    "clingen_threshold_performance": {
+      "revel_pp3_supporting": {
+        "threshold": 0.644,
+        "sensitivity": 0.8519,
+        "specificity": 0.889,
+        "ppv": 0.9427,
+        "tp": 2996,
+        "fp": 182,
+        "fn": 521,
+        "tn": 1457
+      },
+      "revel_pp3_moderate": {
+        "threshold": 0.773,
+        "sensitivity": 0.7435,
+        "specificity": 0.9463,
+        "ppv": 0.9674,
+        "tp": 2615,
+        "fp": 88,
+        "fn": 902,
+        "tn": 1551
+      },
+      "revel_bp4_supporting": {
+        "threshold": 0.29,
+        "sensitivity": 0.0512,
+        "specificity": 0.493,
+        "ppv": 0.178,
+        "tp": 180,
+        "fp": 831,
+        "fn": 3337,
+        "tn": 808
+      },
+      "revel_bp4_moderate": {
+        "threshold": 0.183,
+        "sensitivity": 0.0347,
+        "specificity": 0.6498,
+        "ppv": 0.1753,
+        "tp": 122,
+        "fp": 574,
+        "fn": 3395,
+        "tn": 1065
+      }
+    },
+    "roc_curve": {
+      "fpr": [
+        0.0,
+        0.0085,
+        0.0159,
+        0.0329,
+        0.05,
+        0.0647,
+        0.0921,
+        0.1202,
+        0.1605,
+        0.23,
+        0.3026,
+        0.3716,
+        0.4405,
+        0.5241,
+        0.604,
+        0.7053,
+        0.8023,
+        0.903
+      ],
+      "tpr": [
+        0.0,
+        0.2809,
+        0.4927,
+        0.6244,
+        0.7239,
+        0.7856,
+        0.8303,
+        0.8624,
+        0.8939,
+        0.9073,
+        0.9218,
+        0.9338,
+        0.9423,
+        0.9539,
+        0.9622,
+        0.9701,
+        0.9775,
+        0.992
+      ]
+    },
+    "pr_curve": {
+      "precision": [
+        0.6821,
+        0.7079,
+        0.7272,
+        0.7489,
+        0.7724,
+        0.7952,
+        0.817,
+        0.838,
+        0.8601,
+        0.8818,
+        0.9051,
+        0.9311,
+        0.9417,
+        0.9538,
+        0.9647,
+        0.9691,
+        0.9767,
+        0.9856,
+        0.9863,
+        1.0
+      ],
+      "recall": [
+        1.0,
+        0.9875,
+        0.9764,
+        0.9701,
+        0.9622,
+        0.9551,
+        0.946,
+        0.9357,
+        0.9266,
+        0.9141,
+        0.9005,
+        0.8843,
+        0.8544,
+        0.8214,
+        0.7768,
+        0.7137,
+        0.6201,
+        0.4882,
+        0.2863,
+        0.0026
+      ]
+    }
+  },
+  "clingen_calibrated_thresholds": {
+    "revel_pp3_supporting": 0.644,
+    "revel_pp3_moderate": 0.773,
+    "revel_bp4_supporting": 0.29,
+    "revel_bp4_moderate": 0.183
+  }
+}

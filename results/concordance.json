@@ -1,0 +1,63 @@
+{
+  "dataset": {
+    "name": "ClinGen Evidence Repository",
+    "total_variants": 15334,
+    "expert_P_LP": 6476,
+    "expert_B_LB": 5233,
+    "expert_VUS": 3625
+  },
+  "pathogenic_detection": {
+    "sensitivity": 0.6895,
+    "specificity": 0.7934,
+    "ppv": 0.8051,
+    "npv": 0.7945,
+    "f1": 0.7428
+  },
+  "benign_detection": {
+    "sensitivity": 0.1699,
+    "ppv": 0.9989
+  },
+  "agreement": {
+    "exact_concordance": 0.3158,
+    "binary_concordance": 0.517,
+    "cohens_kappa_5tier": 0.1427,
+    "cohens_kappa_binary": 0.9801
+  },
+  "confusion_matrix": {
+    "Pathogenic": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 3004,
+      "VUS": 1133,
+      "Likely_Benign": 0,
+      "Benign": 0
+    },
+    "Likely_Pathogenic": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 1461,
+      "VUS": 878,
+      "Likely_Benign": 0,
+      "Benign": 0
+    },
+    "VUS": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 1051,
+      "VUS": 2573,
+      "Likely_Benign": 1,
+      "Benign": 0
+    },
+    "Likely_Benign": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 23,
+      "VUS": 2675,
+      "Likely_Benign": 9,
+      "Benign": 4
+    },
+    "Benign": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 7,
+      "VUS": 1639,
+      "Likely_Benign": 76,
+      "Benign": 800
+    }
+  }
+}

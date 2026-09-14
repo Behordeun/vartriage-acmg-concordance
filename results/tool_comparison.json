@@ -1,0 +1,51 @@
+{
+  "tools": {
+    "VarTriage": {
+      "source": "This study",
+      "criteria_count": 10,
+      "benchmark": "ClinGen eRepo (15,334 variants)",
+      "path_sensitivity": 0.689,
+      "path_ppv": 0.805,
+      "ben_sensitivity": 0.169,
+      "ben_ppv": 0.999,
+      "combining_rules": "Relaxed (Bayesian SVI)",
+      "local_execution": true,
+      "memory_mb": 453
+    },
+    "BIAS-2015 v2.1": {
+      "source": "Eisenhart et al. (2025) Genome Medicine 17:62",
+      "criteria_count": 19,
+      "benchmark": "ClinGen eRepo (FDA-approved subset)",
+      "path_sensitivity": 0.74,
+      "path_ppv": null,
+      "ben_sensitivity": 0.802,
+      "ben_ppv": null,
+      "combining_rules": "ACMG 2015 with configurable weights",
+      "local_execution": true,
+      "memory_mb": null
+    },
+    "InterVar": {
+      "source": "Eisenhart et al. (2025) Genome Medicine 17:62",
+      "criteria_count": 18,
+      "benchmark": "ClinGen eRepo (same as BIAS-2015)",
+      "path_sensitivity": 0.643,
+      "path_ppv": null,
+      "ben_sensitivity": 0.539,
+      "ben_ppv": null,
+      "combining_rules": "ACMG 2015 strict",
+      "local_execution": true,
+      "memory_mb": 16000
+    }
+  },
+  "relative_comparison": {
+    "vs_bias2015": {
+      "path_sensitivity_delta": -0.051,
+      "interpretation": "VarTriage trails BIAS-2015 by 5.1pp, primarily due to missing SpliceAI and fewer criteria (10 vs 19)"
+    },
+    "vs_intervar": {
+      "path_sensitivity_delta": 0.046,
+      "interpretation": "VarTriage exceeds InterVar by 4.6pp through strength-modulated PP3/BP4 thresholds"
+    }
+  },
+  "methodology_note": "BIAS-2015 and InterVar numbers are from the same published benchmark (Eisenhart et al., 2025) on the FDA-approved ClinGen eRepo subset. VarTriage was evaluated on the full eRepo (15,334 Expert Panel variants with >=3 stars). Direct head-to-head comparison on identical inputs was not performed."
+}

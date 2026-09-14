@@ -1,0 +1,51 @@
+{
+  "baseline": {
+    "description": "All sources (gnomAD + VEP + REVEL)",
+    "path_sensitivity": 0.6895,
+    "path_ppv": 0.8051,
+    "path_tp": 4465,
+    "ben_sensitivity": 0.1691,
+    "ben_ppv": 0.9989,
+    "binary_concordance": 0.5167
+  },
+  "no_revel": {
+    "description": "No REVEL scores (PP3/BP4 disabled for missense)",
+    "path_sensitivity": 0.3201,
+    "path_ppv": 0.9611,
+    "path_tp": 2073,
+    "ben_sensitivity": 0.1536,
+    "ben_ppv": 1.0,
+    "binary_concordance": 0.4189,
+    "delta_path_sensitivity": -0.3694
+  },
+  "no_gnomad": {
+    "description": "No gnomAD (PM2/BA1/BS1 disabled)",
+    "path_sensitivity": 0.7292,
+    "path_ppv": 0.7884,
+    "path_tp": 4722,
+    "ben_sensitivity": 0.0,
+    "ben_ppv": null,
+    "binary_concordance": 0.4685,
+    "delta_path_sensitivity": 0.0397
+  },
+  "no_vep": {
+    "description": "No VEP (all variants treated as missense)",
+    "path_sensitivity": 0.3723,
+    "path_ppv": 0.7054,
+    "path_tp": 2411,
+    "ben_sensitivity": 0.171,
+    "ben_ppv": 0.9989,
+    "binary_concordance": 0.3878,
+    "delta_path_sensitivity": -0.3172
+  },
+  "no_gnomad_no_vep": {
+    "description": "Minimal: REVEL scores only",
+    "path_sensitivity": 0.4029,
+    "path_ppv": 0.6891,
+    "path_tp": 2609,
+    "ben_sensitivity": 0.0,
+    "ben_ppv": null,
+    "binary_concordance": 0.3355,
+    "delta_path_sensitivity": -0.2866
+  }
+}
