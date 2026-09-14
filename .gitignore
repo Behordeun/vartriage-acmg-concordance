@@ -33,3 +33,7 @@ figures/*.svg
 
 # manuscript
 manuscript/
+
+# Pre-publication result and figure artifacts (kept local until the paper is published)
+results/
+figures/*.pdf
