@@ -1209,7 +1209,7 @@ wheels = [
 
 [[package]]
 name = "vartriage"
-version = "0.14.0"
+version = "0.18.0"
 source = { directory = "/Users/muhammad/Documents/DevProjects/personal_projects/Bioinformatics_Libraries/vartriage" }
 dependencies = [
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
@@ -1235,6 +1235,9 @@ requires-dist = [
     { name = "numpy", specifier = ">=1.24.0,<3.0" },
     { name = "polars", marker = "extra == 'accelerated'", specifier = ">=0.20.0,<2.0" },
     { name = "polars", marker = "extra == 'all'", specifier = ">=0.20.0,<2.0" },
+    { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=4.6.2" },
+    { name = "pydyf", marker = "extra == 'all'", specifier = ">=0.11,<0.13" },
+    { name = "pydyf", marker = "extra == 'clinical'", specifier = ">=0.11,<0.13" },
     { name = "pyranges", marker = "extra == 'accelerated'", specifier = ">=0.1.0,<1.0" },
     { name = "pyranges", marker = "extra == 'all'", specifier = ">=0.1.0,<1.0" },
     { name = "pysam", specifier = ">=0.22.0,<1.0" },
@@ -1243,11 +1246,14 @@ requires-dist = [
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=4.0,<6.0" },
     { name = "pytest-cov", marker = "extra == 'test'", specifier = ">=4.0,<6.0" },
     { name = "python-docx", marker = "extra == 'all'", specifier = ">=1.0,<2.0" },
+    { name = "python-docx", marker = "extra == 'clinical'", specifier = ">=1.0,<2.0" },
     { name = "python-docx", marker = "extra == 'docx'", specifier = ">=1.0,<2.0" },
     { name = "reportlab", marker = "extra == 'all'", specifier = ">=4.0,<5.0" },
     { name = "reportlab", marker = "extra == 'pdf'", specifier = ">=4.0,<5.0" },
+    { name = "weasyprint", marker = "extra == 'all'", specifier = ">=69.0,<71.0" },
+    { name = "weasyprint", marker = "extra == 'clinical'", specifier = ">=69.0,<71.0" },
 ]
-provides-extras = ["accelerated", "pdf", "docx", "api", "all", "dev", "test", "docs"]
+provides-extras = ["accelerated", "pdf", "clinical", "docx", "api", "all", "dev", "test", "docs"]
 
 [[package]]
 name = "vartriage-acmg-concordance"
