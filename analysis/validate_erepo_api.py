@@ -69,22 +69,30 @@ _AA3_TO_1: dict[str, str] = {
     "Ter": "*",
 }
 
-_HGVSP_RE = re.compile(r"p\.([A-Z][a-z]{2})(\d+)([A-Z][a-z]{2})")
+# Match only a clean single-residue substitution: p.Arg100Gln, anchored at the
+# end so frameshift/extension/stop forms (p.Arg100GlnfsTer5, p.Arg100Ter,
+# p.Ter807Argext*?) do not match as missense.
+_HGVSP_RE = re.compile(r"p\.([A-Z][a-z]{2})(\d+)([A-Z][a-z]{2})(?![a-zA-Z])")
 
 
 def parse_hgvsp(hgvsp: Optional[str], gene: Optional[str]) -> Optional[ProteinChange]:
     """Parse a VEP HGVSp string (e.g. 'ENSP...:p.Arg100Gln') into a ProteinChange.
 
-    Returns None for non-missense forms (frameshift, synonymous 'p.=',
-    extensions) or when the amino acids are not standard single substitutions.
+    Returns None for non-missense forms (frameshift, synonymous 'p.=', stop-gain,
+    stop-loss extensions) or when the amino acids are not standard single
+    substitutions. Stop (Ter) as either reference or alternate is rejected: those
+    are nonsense or stop-loss, not missense, and are handled by other criteria.
     """
     if not hgvsp or not gene:
         return None
     m = _HGVSP_RE.search(hgvsp)
     if not m:
         return None
-    ref_aa = _AA3_TO_1.get(m.group(1))
-    alt_aa = _AA3_TO_1.get(m.group(3))
+    ref3, alt3 = m.group(1), m.group(3)
+    if "Ter" in (ref3, alt3):
+        return None
+    ref_aa = _AA3_TO_1.get(ref3)
+    alt_aa = _AA3_TO_1.get(alt3)
     if ref_aa is None or alt_aa is None or ref_aa == alt_aa:
         return None
     return ProteinChange(
@@ -412,7 +420,11 @@ def build_scored_variant(
         population_frequencies=pop_freq,
         gene_name=erepo.gene,
         protein_change=protein_change,
-        gene_context=registry.build_gene_context(erepo.gene) if registry else None,
+        gene_context=(
+            registry.build_gene_context(erepo.gene)
+            if registry and erepo.gene
+            else None
+        ),
     )
 
     return ScoredVariant(
@@ -941,6 +953,11 @@ def main() -> None:
         "gnomad_absent_as_pm2": True,
         "spliceai_file": str(args.spliceai) if args.spliceai else None,
         "spliceai_count": len(spliceai_scores) if spliceai_scores else 0,
+        "clinvar_protein_index": (
+            str(args.clinvar_protein_index) if protein_index else None
+        ),
+        "gene_constraint_enabled": registry is not None,
+        "knowledge_dir": str(args.knowledge_dir) if args.knowledge_dir else None,
         "limit": args.limit,
     }
 
