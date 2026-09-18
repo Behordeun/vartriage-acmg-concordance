@@ -978,22 +978,21 @@ def main() -> None:
 
     out_dir = args.output.parent
     out_dir.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(headline_metrics, indent=2), encoding="utf-8")
-    logger.info("Results (%s) saved to %s", args.combining, args.output)
 
-    # Always write the strict companion under its canonical name (analyses 03/05
-    # read it) unless --output already points there.
+    # Canonical companion files always carry their own mode's metrics, so a
+    # downstream reader of erepo_strict.json / erepo_relaxed.json never gets the
+    # wrong mode regardless of what --output is named.
     strict_path = out_dir / "erepo_strict.json"
-    if strict_path != args.output:
-        strict_path.write_text(json.dumps(strict_metrics, indent=2), encoding="utf-8")
-        logger.info("Results (strict) saved to %s", strict_path)
-    # Write the relaxed companion too when the headline is strict, so the
-    # relaxed set stays available for comparison.
-    if use_strict:
-        relaxed_path = out_dir / "erepo_relaxed.json"
-        if relaxed_path != args.output:
-            relaxed_path.write_text(json.dumps(metrics, indent=2), encoding="utf-8")
-            logger.info("Results (relaxed) saved to %s", relaxed_path)
+    relaxed_path = out_dir / "erepo_relaxed.json"
+    strict_path.write_text(json.dumps(strict_metrics, indent=2), encoding="utf-8")
+    relaxed_path.write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+    logger.info("Results (strict) saved to %s", strict_path)
+    logger.info("Results (relaxed) saved to %s", relaxed_path)
+
+    # Write the user-requested output last so it always holds the selected
+    # headline, even when its name collides with a canonical companion.
+    args.output.write_text(json.dumps(headline_metrics, indent=2), encoding="utf-8")
+    logger.info("Results (%s headline) saved to %s", args.combining, args.output)
 
     # Stratified: both modes in one file, for analyses 03/05.
     strat = {"relaxed": metrics["per_consequence"], "strict": strict_metrics["per_consequence"]}
