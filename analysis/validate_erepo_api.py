@@ -21,6 +21,7 @@ import argparse
 from importlib.metadata import version as _pkg_version
 import json
 import logging
+import re
 import sys
 import time
 from collections import Counter
@@ -28,6 +29,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
+from vartriage.annotation.clinvar_protein_index import ClinVarProteinIndex
 from vartriage.api._cache import ResponseCache
 from vartriage.api._circuit_breaker import CircuitBreaker
 from vartriage.api._rate_limiter import RateLimiter
@@ -35,6 +37,8 @@ from vartriage.api.gnomad_client import GnomADClient
 from vartriage.api.vep_client import VEPClient
 from vartriage.classification.acmg import ACMGClassifier
 from vartriage.classification.combining import combine_evidence
+from vartriage.knowledge.config import KnowledgeBaseConfig
+from vartriage.knowledge.registry import GeneKnowledgeRegistry
 from vartriage.models.variant import (
     ACMGClassification,
     AnnotatedVariant,
@@ -44,6 +48,7 @@ from vartriage.models.variant import (
     EvidenceTag,
     FunctionalConsequence,
     PopulationFrequencies,
+    ProteinChange,
     ScoredVariant,
     Variant,
 )
@@ -54,6 +59,40 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
 )
 logger = logging.getLogger(__name__)
+
+# Three-letter to single-letter amino acid map for parsing HGVSp (p.Arg100Gln)
+_AA3_TO_1: dict[str, str] = {
+    "Ala": "A", "Arg": "R", "Asn": "N", "Asp": "D", "Cys": "C",
+    "Gln": "Q", "Glu": "E", "Gly": "G", "His": "H", "Ile": "I",
+    "Leu": "L", "Lys": "K", "Met": "M", "Phe": "F", "Pro": "P",
+    "Ser": "S", "Thr": "T", "Trp": "W", "Tyr": "Y", "Val": "V",
+    "Ter": "*",
+}
+
+_HGVSP_RE = re.compile(r"p\.([A-Z][a-z]{2})(\d+)([A-Z][a-z]{2})")
+
+
+def parse_hgvsp(hgvsp: Optional[str], gene: Optional[str]) -> Optional[ProteinChange]:
+    """Parse a VEP HGVSp string (e.g. 'ENSP...:p.Arg100Gln') into a ProteinChange.
+
+    Returns None for non-missense forms (frameshift, synonymous 'p.=',
+    extensions) or when the amino acids are not standard single substitutions.
+    """
+    if not hgvsp or not gene:
+        return None
+    m = _HGVSP_RE.search(hgvsp)
+    if not m:
+        return None
+    ref_aa = _AA3_TO_1.get(m.group(1))
+    alt_aa = _AA3_TO_1.get(m.group(3))
+    if ref_aa is None or alt_aa is None or ref_aa == alt_aa:
+        return None
+    return ProteinChange(
+        gene_name=gene,
+        position=int(m.group(2)),
+        reference_aa=ref_aa,
+        altered_aa=alt_aa,
+    )
 
 VARTRIAGE_VERSION = _pkg_version("vartriage")
 
@@ -278,9 +317,11 @@ def build_vep_client(cache: ResponseCache) -> VEPClient:
 def fetch_vep_consequences(
     variants: list[ERepoVariant],
     client: VEPClient,
-) -> list[FunctionalConsequence]:
+) -> tuple[list[FunctionalConsequence], list[Optional[ProteinChange]]]:
     """Batch-annotate variants via VEP to get real functional consequences.
 
+    Returns per-variant consequences and, for missense with a parseable HGVSp,
+    the ProteinChange (gene, position, ref/alt amino acid) that PS1/PM5 need.
     Falls back to MISSENSE when VEP doesn't return a result (safest assumption
     for an SNV in a coding gene that made it into ClinGen eRepo).
     """
@@ -291,20 +332,28 @@ def fetch_vep_consequences(
     vep_results = client.annotate_batch(variant_tuples)
 
     consequences: list[FunctionalConsequence] = []
+    protein_changes: list[Optional[ProteinChange]] = []
     annotated_count = 0
+    protein_count = 0
     for result in vep_results:
         if result is not None:
             consequences.append(result.consequence)
+            pc = parse_hgvsp(result.hgvsp, result.gene_name)
+            protein_changes.append(pc)
+            if pc is not None:
+                protein_count += 1
             annotated_count += 1
         else:
             # Fallback: assume missense for coding SNVs without VEP result
             consequences.append(FunctionalConsequence.MISSENSE)
+            protein_changes.append(None)
 
     elapsed = time.time() - t0
     logger.info(
-        "VEP complete: %d/%d annotated (%.1fs)",
+        "VEP complete: %d/%d annotated, %d protein changes parsed (%.1fs)",
         annotated_count,
         len(variants),
+        protein_count,
         elapsed,
     )
 
@@ -313,7 +362,7 @@ def fetch_vep_consequences(
     for csq, count in dist.most_common():
         logger.info("  %s: %d", csq, count)
 
-    return consequences
+    return consequences, protein_changes
 
 
 # ---------------------------------------------------------------------------
@@ -328,6 +377,8 @@ def build_scored_variant(
     consequence: FunctionalConsequence,
     gnomad_absent: bool,
     spliceai_score: Optional[float] = None,
+    protein_change: Optional[ProteinChange] = None,
+    registry: Optional[GeneKnowledgeRegistry] = None,
 ) -> ScoredVariant:
     """Construct a ScoredVariant for the ACMGClassifier.
 
@@ -360,6 +411,8 @@ def build_scored_variant(
         allele_frequency=global_af,
         population_frequencies=pop_freq,
         gene_name=erepo.gene,
+        protein_change=protein_change,
+        gene_context=registry.build_gene_context(erepo.gene) if registry else None,
     )
 
     return ScoredVariant(
@@ -376,12 +429,18 @@ def classify_variants(
     consequences: list[FunctionalConsequence],
     gnomad_queried: bool,
     spliceai_scores: Optional[dict[tuple[str, int, str, str], float]] = None,
+    protein_changes: Optional[list[Optional[ProteinChange]]] = None,
+    protein_index: Optional[ClinVarProteinIndex] = None,
+    registry: Optional[GeneKnowledgeRegistry] = None,
 ) -> list[ClassifiedVariant]:
     """Run all variants through vartriage's ACMGClassifier."""
-    classifier = ACMGClassifier()
+    classifier = ACMGClassifier(protein_index=protein_index)
+
+    if protein_changes is None:
+        protein_changes = [None] * len(variants)
 
     scored_variants: list[ScoredVariant] = []
-    for v, freq, csq in zip(variants, gnomad_freqs, consequences):
+    for v, freq, csq, pc in zip(variants, gnomad_freqs, consequences, protein_changes):
         revel = revel_scores.get((v.chrom, v.pos, v.ref, v.alt))
         spliceai = None
         if spliceai_scores:
@@ -389,7 +448,7 @@ def classify_variants(
         # gnomad_absent = we queried gnomAD and it returned None (not found)
         gnomad_absent = gnomad_queried and freq is None
         scored_variants.append(
-            build_scored_variant(v, freq, revel, csq, gnomad_absent, spliceai)
+            build_scored_variant(v, freq, revel, csq, gnomad_absent, spliceai, pc, registry)
         )
 
     results = list(classifier.classify(iter(scored_variants)))
@@ -742,10 +801,47 @@ def main() -> None:
         help="Use relaxed combining: >=2 moderate pathogenic = Likely Pathogenic",
     )
     parser.add_argument(
+        "--combining",
+        choices=("strict", "relaxed"),
+        default="relaxed",
+        help=(
+            "Which classified set --output and the printed summary use. "
+            "strict = raw ACMGClassifier point-system output. "
+            "relaxed = script-level 2-moderate->LP upgrade layered on top. "
+            "Both companion files (erepo_strict.json, erepo_stratified.json) are "
+            "written regardless. Default relaxed preserves prior behaviour."
+        ),
+    )
+    parser.add_argument(
         "--spliceai",
         type=Path,
         default=None,
         help="Path to SpliceAI scores TSV (chrom, pos, ref, alt, spliceai_max_delta)",
+    )
+    parser.add_argument(
+        "--clinvar-protein-index",
+        type=Path,
+        default=None,
+        help=(
+            "Path to a ClinVar protein index TSV (built by "
+            "scripts/prepare_clinvar_protein_index.py). Enables PS1/PM5. "
+            "The index's anti-self-match guard prevents circular validation."
+        ),
+    )
+    parser.add_argument(
+        "--enable-gene-constraint",
+        action="store_true",
+        help=(
+            "Attach gnomAD gene constraint (mis_z) as gene_context, enabling "
+            "PM1 for missense in missense-constrained genes. Uses the bundled "
+            "knowledge data unless --knowledge-dir is given."
+        ),
+    )
+    parser.add_argument(
+        "--knowledge-dir",
+        type=Path,
+        default=None,
+        help="Directory of knowledge TSVs (gnomad_constraint.tsv, ...). Defaults to bundled.",
     )
     args = parser.parse_args()
 
@@ -790,10 +886,36 @@ def main() -> None:
     if args.skip_vep:
         logger.info("Skipping VEP (--skip-vep); treating all as MISSENSE")
         consequences = [FunctionalConsequence.MISSENSE] * len(variants)
+        protein_changes: list[Optional[ProteinChange]] = [None] * len(variants)
     else:
         vep_client = build_vep_client(cache)
-        consequences = fetch_vep_consequences(variants, vep_client)
+        consequences, protein_changes = fetch_vep_consequences(variants, vep_client)
         vep_client.close()
+
+    # Load the ClinVar protein index for PS1/PM5 if provided
+    protein_index: Optional[ClinVarProteinIndex] = None
+    if args.clinvar_protein_index:
+        if args.clinvar_protein_index.exists():
+            protein_index = ClinVarProteinIndex()
+            protein_index.load(args.clinvar_protein_index)
+            logger.info(
+                "Loaded ClinVar protein index from %s", args.clinvar_protein_index
+            )
+        else:
+            logger.warning(
+                "ClinVar protein index not found: %s (PS1/PM5 will not fire)",
+                args.clinvar_protein_index,
+            )
+
+    # Gene constraint registry for PM1 (missense-constrained genes)
+    registry: Optional[GeneKnowledgeRegistry] = None
+    if args.enable_gene_constraint:
+        kb_config = KnowledgeBaseConfig(data_dir=args.knowledge_dir)
+        registry = GeneKnowledgeRegistry(kb_config)
+        logger.info(
+            "Gene constraint registry loaded (PM1 enabled) from %s",
+            args.knowledge_dir or "bundled knowledge data",
+        )
 
     # Load SpliceAI scores if provided
     spliceai_scores = _load_spliceai_scores(args.spliceai)
@@ -806,6 +928,9 @@ def main() -> None:
     classified_strict = classify_variants(
         variants, gnomad_freqs, revel_scores, consequences, gnomad_queried,
         spliceai_scores=spliceai_scores,
+        protein_changes=protein_changes,
+        protein_index=protein_index,
+        registry=registry,
     )
     logger.info("Classification complete in %.2fs", time.time() - t0)
     classified_relaxed = apply_relaxed_combining(classified_strict)
@@ -829,14 +954,29 @@ def main() -> None:
     metrics = _finalize(classified_relaxed, True)
     strict_metrics = _finalize(classified_strict, False)
 
-    # Save relaxed (headline) + strict companion
+    # --combining selects which set --output and the printed summary use.
+    # Both companion files are written regardless so no measurement is lost.
+    use_strict = args.combining == "strict"
+    headline_metrics = strict_metrics if use_strict else metrics
+
     out_dir = args.output.parent
     out_dir.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(metrics, indent=2), encoding="utf-8")
-    logger.info("Results (relaxed) saved to %s", args.output)
+    args.output.write_text(json.dumps(headline_metrics, indent=2), encoding="utf-8")
+    logger.info("Results (%s) saved to %s", args.combining, args.output)
+
+    # Always write the strict companion under its canonical name (analyses 03/05
+    # read it) unless --output already points there.
     strict_path = out_dir / "erepo_strict.json"
-    strict_path.write_text(json.dumps(strict_metrics, indent=2), encoding="utf-8")
-    logger.info("Results (strict) saved to %s", strict_path)
+    if strict_path != args.output:
+        strict_path.write_text(json.dumps(strict_metrics, indent=2), encoding="utf-8")
+        logger.info("Results (strict) saved to %s", strict_path)
+    # Write the relaxed companion too when the headline is strict, so the
+    # relaxed set stays available for comparison.
+    if use_strict:
+        relaxed_path = out_dir / "erepo_relaxed.json"
+        if relaxed_path != args.output:
+            relaxed_path.write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+            logger.info("Results (relaxed) saved to %s", relaxed_path)
 
     # Stratified: both modes in one file, for analyses 03/05.
     strat = {"relaxed": metrics["per_consequence"], "strict": strict_metrics["per_consequence"]}
@@ -845,7 +985,7 @@ def main() -> None:
     logger.info("Stratified (relaxed+strict) saved to %s", strat_path)
 
     # Print
-    print_summary(metrics, args.relaxed_combining)
+    print_summary(headline_metrics, use_strict is False)
 
 
 if __name__ == "__main__":
