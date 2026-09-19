@@ -1,34 +1,34 @@
 {
-  "pathogenic_sensitivity": {
-    "point": 0.6895,
-    "ci_lower": 0.6781,
-    "ci_upper": 0.7006,
-    "n_events": 4465,
-    "n_total": 6476
-  },
-  "pathogenic_ppv": {
-    "point": 0.8052,
-    "ci_lower": 0.7946,
-    "ci_upper": 0.8154,
-    "n_events": 4465,
-    "n_total": 5545
-  },
-  "benign_sensitivity": {
-    "point": 0.1691,
-    "ci_lower": 0.1592,
-    "ci_upper": 0.1795,
-    "n_events": 885,
-    "n_total": 5233
-  },
-  "binary_kappa": {
-    "value": 0.98,
-    "n_variants_in_calculation": 5384,
-    "pct_of_total": 35.1,
-    "note": "Computed on non-VUS subset only (variants where both expert and tool assign P/LP or B/LB)"
-  },
-  "weighted_kappa_5tier": {
-    "linear": 0.3367,
-    "quadratic": 0.5158,
-    "note": "Gives partial credit for near-misses (LP vs VUS < LP vs B)"
-  }
+ "pathogenic_sensitivity": {
+  "point": 0.696,
+  "ci_lower": 0.6846,
+  "ci_upper": 0.707,
+  "n_events": 4507,
+  "n_total": 6476
+ },
+ "pathogenic_ppv": {
+  "point": 0.86,
+  "ci_lower": 0.8503,
+  "ci_upper": 0.8691,
+  "n_events": 4507,
+  "n_total": 5241
+ },
+ "benign_sensitivity": {
+  "point": 0.3371,
+  "ci_lower": 0.3244,
+  "ci_upper": 0.35,
+  "n_events": 1764,
+  "n_total": 5233
+ },
+ "binary_kappa": {
+  "value": 0.9879,
+  "n_variants_in_calculation": 6302,
+  "pct_of_total": 41.1,
+  "note": "Computed on non-VUS subset only (variants where both expert and tool assign P/LP or B/LB)"
+ },
+ "weighted_kappa_5tier": {
+  "linear": 0.4223,
+  "quadratic": 0.6259,
+  "note": "Gives partial credit for near-misses (LP vs VUS < LP vs B)"
+ }
 }

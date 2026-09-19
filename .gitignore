@@ -30,6 +30,15 @@ logs/
 
 # Generated SVG (keep PDF only)
 figures/*.svg
+figures/*.png
+
+# Local point-system run artifacts (unpublished, stay local until co-author sign-off)
+results/*_pointsystem*.json
+results/ablation_pointsystem/
+results/erepo_*.json
 
 # manuscript
 manuscript/
+
+# Local working notes (never committed)
+review/

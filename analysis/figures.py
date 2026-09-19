@@ -241,17 +241,13 @@ def figure_tag_frequency() -> None:
     names = [t[0] for t in sorted_tags]
     counts = [t[1]["count"] for t in sorted_tags]
 
-    # Color by pathogenic vs benign
-    pathogenic_tags = {"PVS1", "PS1", "PM2", "PM5", "PP3", "PP3_Moderate", "PP5"}
-    benign_tags = {"BA1", "BS1", "BP4", "BP4_Moderate", "BP7"}
-    colors = []
-    for name in names:
-        if name in pathogenic_tags:
-            colors.append(COLORS["secondary"])
-        elif name in benign_tags:
-            colors.append(COLORS["primary"])
-        else:
-            colors.append(COLORS["neutral"])
+    # Color by evidence direction via tag prefix, so strength-tier and
+    # constraint tags (PP3_Strong, PVS1_Strong, PM1, PS1, PM5) are classified
+    # correctly rather than falling through to neutral.
+    def _is_benign(tag: str) -> bool:
+        return tag.startswith(("BA", "BS", "BP"))
+
+    colors = [COLORS["primary"] if _is_benign(name) else COLORS["secondary"] for name in names]
 
     fig, ax = plt.subplots(figsize=(5.0, 3.5))
 
@@ -324,7 +320,7 @@ def figure_consequence_odds() -> None:
         ax.text(max(ors) * 1.1, i, label, va="center", fontsize=6,
                 color=COLORS["neutral"])
 
-    ax.set_xlim(0.005, max(ors) * 5)
+    ax.set_xlim(0.005, max(ors) * 30)
 
     fig.savefig(FIGURES_DIR / "fig5_consequence_odds.pdf")
     plt.close(fig)
@@ -357,7 +353,10 @@ def figure_tool_comparison() -> None:
                    label="Benign sensitivity")
 
     ax.set_xticks(x)
-    ax.set_xticklabels(tool_names, fontsize=8)
+    ax.set_xticklabels(
+        [f"{name}\n({c} criteria)" for name, c in zip(tool_names, criteria)],
+        fontsize=8,
+    )
     ax.set_ylabel("Sensitivity (%)")
     ax.set_title("Multi-tool classification performance on ClinGen eRepo")
     ax.legend(loc="upper right")
@@ -374,11 +373,6 @@ def figure_tool_comparison() -> None:
         if h > 0:
             ax.text(bar.get_x() + bar.get_width() / 2, h + 1, f"{h:.1f}%",
                     ha="center", va="bottom", fontsize=7)
-
-    # Criteria count annotation
-    for i, c in enumerate(criteria):
-        ax.text(i, -8, f"{c} criteria", ha="center", fontsize=7,
-                color=COLORS["neutral"])
 
     fig.savefig(FIGURES_DIR / "fig6_tool_comparison.pdf")
     plt.close(fig)
