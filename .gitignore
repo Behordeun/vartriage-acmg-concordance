@@ -36,9 +36,24 @@ figures/*.png
 results/*_pointsystem*.json
 results/ablation_pointsystem/
 results/erepo_*.json
+results/population_equity_*.json
 
 # manuscript
 manuscript/
 
 # Local working notes (never committed)
 review/
+
+# overnight run reports (local only)
+OVERNIGHT_REPORT_*.md
+
+# Detached-run scratch artifacts (control files + throwaway launch wrappers)
+*.log
+*.pid
+*.rc
+*_rc
+.erepo_*
+.pm2_rerun*
+.warm_rc
+run_erepo_*.sh
+run_*_v1*.sh
