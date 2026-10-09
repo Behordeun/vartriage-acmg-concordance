@@ -1,41 +1,44 @@
 {
- "baseline": {
-  "description": "All sources (gnomAD + VEP + REVEL)",
-  "path_sensitivity": 0.696,
-  "path_ppv": 0.86,
-  "path_tp": 4507,
-  "ben_sensitivity": 0.3371,
-  "ben_ppv": 0.9469,
-  "binary_concordance": 0.5931
- },
- "no_revel": {
-  "description": "No REVEL scores (PP3/BP4 disabled for missense)",
-  "path_sensitivity": 0.468,
-  "path_ppv": 0.9398,
-  "path_tp": 3031,
-  "ben_sensitivity": 0.287,
-  "ben_ppv": 0.9856,
-  "binary_concordance": 0.5189,
-  "delta_path_sensitivity": -0.228
- },
- "no_gnomad": {
-  "description": "No gnomAD (PM2/BA1/BS1 disabled)",
-  "path_sensitivity": 0.7168,
-  "path_ppv": 0.8511,
-  "path_tp": 4642,
-  "ben_sensitivity": 0.0,
-  "ben_ppv": null,
-  "binary_concordance": 0.4895,
-  "delta_path_sensitivity": 0.0208
- },
- "no_vep": {
-  "description": "No VEP (all variants treated as missense)",
-  "path_sensitivity": 0.2129,
-  "path_ppv": 0.7281,
-  "path_tp": 1379,
-  "ben_sensitivity": 0.3445,
-  "ben_ppv": 0.9455,
-  "binary_concordance": 0.4049,
-  "delta_path_sensitivity": -0.4831
- }
+  "baseline": {
+    "description": "All sources (gnomAD + VEP + REVEL)",
+    "path_sensitivity": 0.696,
+    "path_ppv": 0.86,
+    "path_tp": 4507,
+    "ben_sensitivity": 0.3371,
+    "ben_ppv": 0.9469,
+    "binary_concordance": 0.5931
+  },
+  "no_revel": {
+    "description": "No REVEL scores (PP3/BP4 disabled for missense)",
+    "path_sensitivity": 0.468,
+    "path_ppv": 0.9398,
+    "path_tp": 3031,
+    "ben_sensitivity": 0.287,
+    "ben_ppv": 0.9856,
+    "binary_concordance": 0.5189,
+    "delta_path_sensitivity": -0.228
+  },
+  "no_gnomad": {
+    "description": "No gnomAD (PM2/BA1/BS1 disabled)",
+    "path_sensitivity": 0.7168,
+    "path_ppv": 0.8511,
+    "path_tp": 4642,
+    "ben_sensitivity": 0.0,
+    "ben_ppv": null,
+    "binary_concordance": 0.4895,
+    "delta_path_sensitivity": 0.0208
+  },
+  "no_vep": {
+    "description": "No VEP (all variants treated as missense)",
+    "path_sensitivity": 0.2129,
+    "path_ppv": 0.7281,
+    "path_tp": 1379,
+    "ben_sensitivity": 0.3445,
+    "ben_ppv": 0.9455,
+    "binary_concordance": 0.4049,
+    "delta_path_sensitivity": -0.4831
+  },
+  "no_gnomad_no_vep": {
+    "error": "run failed"
+  }
 }
