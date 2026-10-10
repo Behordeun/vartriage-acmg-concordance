@@ -52,6 +52,7 @@ manuscript/
 
 # Local working notes (never committed)
 review/
+*.local.md
 
 # overnight run reports (local only)
 OVERNIGHT_REPORT_*.md
@@ -66,3 +67,7 @@ OVERNIGHT_REPORT_*.md
 .warm_rc
 run_erepo_*.sh
 run_*_v1*.sh
+
+# Overleaf export packages (zip/docx) -- not published via git
+overleaf_packages/
+*.docx

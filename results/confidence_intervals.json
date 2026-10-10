@@ -1,27 +1,27 @@
 {
   "pathogenic_sensitivity": {
-    "point": 0.6895,
-    "ci_lower": 0.6781,
-    "ci_upper": 0.7006,
-    "n_events": 4465,
+    "point": 0.4731,
+    "ci_lower": 0.461,
+    "ci_upper": 0.4853,
+    "n_events": 3064,
     "n_total": 6476
   },
   "pathogenic_ppv": {
-    "point": 0.9165,
-    "ci_lower": 0.9084,
-    "ci_upper": 0.9239,
-    "n_events": 4465,
-    "n_total": 4872
+    "point": 0.9163,
+    "ci_lower": 0.9064,
+    "ci_upper": 0.9252,
+    "n_events": 3064,
+    "n_total": 3344
   },
   "benign_sensitivity": {
-    "point": 0.1691,
-    "ci_lower": 0.1592,
-    "ci_upper": 0.1795,
-    "n_events": 885,
+    "point": 0.3514,
+    "ci_lower": 0.3386,
+    "ci_upper": 0.3645,
+    "n_events": 1839,
     "n_total": 5233
   },
   "binary_kappa": {
-    "value": 0.98,
+    "value": 0.984,
     "n_variants_in_calculation": 4940,
     "pct_of_total": 32.2,
     "note": "Computed on non-VUS subset only (variants where both expert and tool assign P/LP or B/LB)"

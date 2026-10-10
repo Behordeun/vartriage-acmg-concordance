@@ -1,0 +1,24 @@
+{
+  "relaxed": {
+    "Missense": {
+      "count": 15334,
+      "expert_P_LP": 6476,
+      "path_tp": 457,
+      "expert_B_LB": 5233,
+      "ben_tp": 462,
+      "path_sensitivity": 0.0706,
+      "ben_sensitivity": 0.0883
+    }
+  },
+  "strict": {
+    "Missense": {
+      "count": 15334,
+      "expert_P_LP": 6476,
+      "path_tp": 210,
+      "expert_B_LB": 5233,
+      "ben_tp": 462,
+      "path_sensitivity": 0.0324,
+      "ben_sensitivity": 0.0883
+    }
+  }
+}
