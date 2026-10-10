@@ -55,7 +55,7 @@ review/
 *.local.md
 
 # overnight run reports (local only)
-OVERNIGHT_REPORT_*.md
+OVERNIGHT_REPORT*.md
 
 # Detached-run scratch artifacts (control files + throwaway launch wrappers)
 *.log
