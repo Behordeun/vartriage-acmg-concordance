@@ -1,109 +1,149 @@
 {
- "tag_frequency": {
-  "PM2": {
-   "count": 11164,
-   "pct_of_total": 72.81
+  "tag_frequency": {
+    "PM2": {
+      "count": 11164,
+      "pct_of_total": 72.81
+    },
+    "PVS1": {
+      "count": 2585,
+      "pct_of_total": 16.86
+    },
+    "PP3_Moderate": {
+      "count": 2186,
+      "pct_of_total": 14.26
+    },
+    "PP3": {
+      "count": 1986,
+      "pct_of_total": 12.95
+    },
+    "PP3_Strong": {
+      "count": 1600,
+      "pct_of_total": 10.43
+    },
+    "PM1": {
+      "count": 1399,
+      "pct_of_total": 9.12
+    },
+    "PM5": {
+      "count": 953,
+      "pct_of_total": 6.21
+    },
+    "BA1": {
+      "count": 804,
+      "pct_of_total": 5.24
+    },
+    "BS1": {
+      "count": 725,
+      "pct_of_total": 4.73
+    },
+    "BP4_Moderate": {
+      "count": 717,
+      "pct_of_total": 4.68
+    },
+    "BP4": {
+      "count": 472,
+      "pct_of_total": 3.08
+    },
+    "PVS1_Strong": {
+      "count": 433,
+      "pct_of_total": 2.82
+    },
+    "PS1": {
+      "count": 113,
+      "pct_of_total": 0.74
+    }
   },
-  "PP3_Moderate": {
-   "count": 2186,
-   "pct_of_total": 14.26
+  "tag_ranking": [
+    "PM2",
+    "PVS1",
+    "PP3_Moderate",
+    "PP3",
+    "PP3_Strong",
+    "PM1",
+    "PM5",
+    "BA1",
+    "BS1",
+    "BP4_Moderate",
+    "BP4",
+    "PVS1_Strong",
+    "PS1"
+  ],
+  "combining_rule_impact": {
+    "relaxed_sensitivity": 0.4731,
+    "strict_sensitivity": 0.4731,
+    "delta_sensitivity": 0.0,
+    "relaxed_tp": 3064,
+    "strict_tp": 3064,
+    "variants_gained_by_relaxed": 0
   },
-  "PVS1_Strong": {
-   "count": 2122,
-   "pct_of_total": 13.84
+  "per_consequence_sensitivity": {
+    "relaxed": {
+      "Missense": {
+        "path_sensitivity": 0.3221,
+        "path_tp": 1069,
+        "expert_P_LP": 3319
+      },
+      "Splice_Site": {
+        "path_sensitivity": 0.7745,
+        "path_tp": 711,
+        "expert_P_LP": 918
+      },
+      "Synonymous": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 104
+      },
+      "Nonsense": {
+        "path_sensitivity": 0.8154,
+        "path_tp": 1740,
+        "expert_P_LP": 2134
+      },
+      "Intergenic": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 1
+      }
+    },
+    "strict": {
+      "Missense": {
+        "path_sensitivity": 0.1847,
+        "path_tp": 613,
+        "expert_P_LP": 3319
+      },
+      "Splice_Site": {
+        "path_sensitivity": 0.7745,
+        "path_tp": 711,
+        "expert_P_LP": 918
+      },
+      "Synonymous": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 104
+      },
+      "Nonsense": {
+        "path_sensitivity": 0.8154,
+        "path_tp": 1740,
+        "expert_P_LP": 2134
+      },
+      "Intergenic": {
+        "path_sensitivity": 0.0,
+        "path_tp": 0,
+        "expert_P_LP": 1
+      }
+    }
   },
-  "PP3": {
-   "count": 1986,
-   "pct_of_total": 12.95
-  },
-  "PP3_Strong": {
-   "count": 1600,
-   "pct_of_total": 10.43
-  },
-  "PM1": {
-   "count": 1399,
-   "pct_of_total": 9.12
-  },
-  "PM5": {
-   "count": 953,
-   "pct_of_total": 6.21
-  },
-  "PVS1": {
-   "count": 896,
-   "pct_of_total": 5.84
-  },
-  "BA1": {
-   "count": 804,
-   "pct_of_total": 5.24
-  },
-  "BS1": {
-   "count": 725,
-   "pct_of_total": 4.73
-  },
-  "BP4_Moderate": {
-   "count": 717,
-   "pct_of_total": 4.68
-  },
-  "BP4": {
-   "count": 472,
-   "pct_of_total": 3.08
-  },
-  "PS1": {
-   "count": 113,
-   "pct_of_total": 0.74
+  "key_findings": {
+    "most_common_tag": "PM2",
+    "pathogenic_driver_tags": [
+      "PVS1",
+      "PP3_Moderate",
+      "PM2"
+    ],
+    "benign_driver_tags": [
+      "BA1",
+      "BS1",
+      "BP4_Moderate"
+    ],
+    "relaxed_vs_strict_gain": 0
   }
- },
- "tag_ranking": [
-  "PM2",
-  "PP3_Moderate",
-  "PVS1_Strong",
-  "PP3",
-  "PP3_Strong",
-  "PM1",
-  "PM5",
-  "PVS1",
-  "BA1",
-  "BS1",
-  "BP4_Moderate",
-  "BP4",
-  "PS1"
- ],
- "combining_rule_impact": {
-  "point_system_sensitivity": 0.696,
-  "point_system_ppv": 0.86,
-  "point_system_tp": 4507,
-  "note": "Sensitivity derives from calibrated evidence strength (strength-modulated REVEL, PS1/PM5, PM1) under the SVI point system. A non-standard two-moderate-to-LP rule raises nominal sensitivity but lowers PPV and 5-tier agreement, and is not applied."
- },
- "per_consequence_sensitivity": {
-  "Missense": {
-   "path_sensitivity": 0.5173,
-   "path_tp": 1717,
-   "expert_P_LP": 3319
-  },
-  "Nonsense": {
-   "path_sensitivity": 0.9724,
-   "path_tp": 2075,
-   "expert_P_LP": 2134
-  },
-  "Splice_Site": {
-   "path_sensitivity": 0.7789,
-   "path_tp": 715,
-   "expert_P_LP": 918
-  },
-  "Synonymous": {
-   "path_sensitivity": 0.0,
-   "path_tp": 0,
-   "expert_P_LP": 104
-  },
-  "Intergenic": {
-   "path_sensitivity": 0.0,
-   "path_tp": 0,
-   "expert_P_LP": 1
-  }
- },
- "key_findings": [
-  "PM2 is the most frequent tag (72.8%), consistent with a rare-variant cohort.",
-  "Strong-strength computational evidence (PP3_Strong) fires on 1,600 variants and enables LP without a non-standard promotion rule.",
-  "Protein-level (PS1 113, PM5 953) and constraint (PM1 1,399) evidence add sensitivity while preserving precision."
- ]
 }

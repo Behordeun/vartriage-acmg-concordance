@@ -12,6 +12,15 @@ data/
 results/scratch_*
 results/test_*
 
+# PM2/PVS1 reconciliation intermediates (non-comparable denominators, detour runs).
+# Keep local; the two canonical 6476-denominator results below are tracked instead:
+# results/pm2_pvs1_counterfactual_2x2.json and results/pm2_rescued_gene_validation.json
+results/concordance_v1.2.0_headline.json
+results/pm2_clean_engine_measure.json
+results/pm2_full_evidence_POSTFIX.json
+results/pm2_full_evidence_both_strengths.json
+results/pm2_reconciliation.json
+
 # OS
 .DS_Store
 Thumbs.db
@@ -36,9 +45,29 @@ figures/*.png
 results/*_pointsystem*.json
 results/ablation_pointsystem/
 results/erepo_*.json
+results/population_equity_*.json
 
 # manuscript
 manuscript/
 
 # Local working notes (never committed)
 review/
+*.local.md
+
+# overnight run reports (local only)
+OVERNIGHT_REPORT*.md
+
+# Detached-run scratch artifacts (control files + throwaway launch wrappers)
+*.log
+*.pid
+*.rc
+*_rc
+.erepo_*
+.pm2_rerun*
+.warm_rc
+run_erepo_*.sh
+run_*_v1*.sh
+
+# Overleaf export packages (zip/docx) -- not published via git
+overleaf_packages/
+*.docx

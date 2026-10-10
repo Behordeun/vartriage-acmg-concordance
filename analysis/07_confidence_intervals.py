@@ -75,13 +75,18 @@ def main() -> None:
     path_det = data["pathogenic_detection"]
     cm = data["confusion_matrix"]
 
-    # Key counts
-    tp = path_det.get("true_positives", 4465)
-    expert_plp = 6476
-    predicted_plp = int(tp / path_det["ppv"]) if path_det["ppv"] else 0
+    # Derive every count from the confusion matrix so the CIs always trace to
+    # the run that produced concordance.json, never a hardcoded prior-regime
+    # value. Expert tiers are matrix rows, tool calls are columns.
+    path_tiers = ("Pathogenic", "Likely_Pathogenic")
+    ben_tiers = ("Benign", "Likely_Benign")
 
-    ben_tp = 885
-    expert_blb = 5233
+    tp = sum(cm[et].get(vt, 0) for et in path_tiers for vt in path_tiers)
+    predicted_plp = sum(cm[et].get(vt, 0) for et in cm for vt in path_tiers)
+    ben_tp = sum(cm[et].get(vt, 0) for et in ben_tiers for vt in ben_tiers)
+
+    expert_plp = data["dataset"]["expert_P_LP"]
+    expert_blb = data["dataset"]["expert_B_LB"]
 
     # Wilson CIs
     sens_p, sens_lo, sens_hi = wilson_ci(tp, expert_plp)
@@ -136,7 +141,7 @@ def main() -> None:
             "n_total": expert_blb,
         },
         "binary_kappa": {
-            "value": 0.980,
+            "value": round(data["agreement"]["cohens_kappa_binary"], 4),
             "n_variants_in_calculation": binary_n,
             "pct_of_total": round(binary_n / data["dataset"]["total_variants"] * 100, 1),
             "note": "Computed on non-VUS subset only (variants where both expert and tool assign P/LP or B/LB)",

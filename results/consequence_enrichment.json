@@ -1,11 +1,5 @@
 {
-  "consequence_distribution": {
-    "Missense": 7920,
-    "Synonymous": 3741,
-    "Nonsense": 2238,
-    "Splice_Site": 1410,
-    "Intergenic": 25
-  },
+  "consequence_distribution": {},
   "odds_ratios_for_pathogenicity": {
     "Missense": {
       "expert_P_LP": 3319,
@@ -14,6 +8,14 @@
       "odds_ratio": 2.4,
       "p_value": 0.0,
       "pathogenic_fraction": 0.4191
+    },
+    "Splice_Site": {
+      "expert_P_LP": 918,
+      "expert_B_LB": 285,
+      "total": 1410,
+      "odds_ratio": 2.87,
+      "p_value": 0.0,
+      "pathogenic_fraction": 0.6511
     },
     "Synonymous": {
       "expert_P_LP": 104,
@@ -30,14 +32,6 @@
       "odds_ratio": 160.25,
       "p_value": 0.0,
       "pathogenic_fraction": 0.9535
-    },
-    "Splice_Site": {
-      "expert_P_LP": 918,
-      "expert_B_LB": 285,
-      "total": 1410,
-      "odds_ratio": 2.87,
-      "p_value": 0.0,
-      "pathogenic_fraction": 0.6511
     },
     "Intergenic": {
       "expert_P_LP": 1,
@@ -57,6 +51,6 @@
   },
   "key_findings": {
     "highest_pathogenic_enrichment": "Nonsense",
-    "most_common_consequence": "Missense"
+    "most_common_consequence": null
   }
 }

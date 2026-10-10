@@ -1,0 +1,75 @@
+{
+  "rescued_to_very_strong": 1805,
+  "rescued_expert_distribution": {
+    "Pathogenic": 1652,
+    "VUS": 55,
+    "Likely_Pathogenic": 85,
+    "Likely_Benign": 7,
+    "Benign": 6
+  },
+  "rescued_expert_plp": 1652,
+  "rescued_expert_plp_pct": 91.5,
+  "rescued_non_plp": 153,
+  "top_rescued_genes": [
+    [
+      "BRCA2",
+      580
+    ],
+    [
+      "BRCA1",
+      435
+    ],
+    [
+      "MSH2",
+      108
+    ],
+    [
+      "CFTR",
+      90
+    ],
+    [
+      "MLH1",
+      77
+    ],
+    [
+      "PAH",
+      72
+    ],
+    [
+      "CDH1",
+      49
+    ],
+    [
+      "MSH6",
+      47
+    ],
+    [
+      "RUNX1",
+      37
+    ],
+    [
+      "HNF1A",
+      33
+    ],
+    [
+      "LDLR",
+      27
+    ],
+    [
+      "ACADVL",
+      22
+    ],
+    [
+      "HNF4A",
+      21
+    ],
+    [
+      "ATM",
+      20
+    ],
+    [
+      "GCK",
+      19
+    ]
+  ]
+}

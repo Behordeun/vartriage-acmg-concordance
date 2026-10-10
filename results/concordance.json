@@ -1,63 +1,63 @@
 {
- "dataset": {
-  "name": "ClinGen Evidence Repository",
-  "total_variants": 15334,
-  "expert_P_LP": 6476,
-  "expert_B_LB": 5233,
-  "expert_VUS": 3625
- },
- "pathogenic_detection": {
-  "sensitivity": 0.696,
-  "specificity": null,
-  "ppv": 0.86,
-  "npv": null,
-  "f1": null
- },
- "benign_detection": {
-  "sensitivity": 0.3371,
-  "ppv": 0.9469
- },
- "agreement": {
-  "exact_concordance": 0.3476,
-  "binary_concordance": 0.5931,
-  "cohens_kappa_5tier": 0.1769,
-  "cohens_kappa_binary": 0.9879
- },
- "confusion_matrix": {
-  "Pathogenic": {
-   "Pathogenic": 562,
-   "Likely_Pathogenic": 2633,
-   "VUS": 936,
-   "Likely_Benign": 6,
-   "Benign": 0
+  "dataset": {
+    "name": "ClinGen Evidence Repository",
+    "total_variants": 15334,
+    "expert_P_LP": 6476,
+    "expert_B_LB": 5233,
+    "expert_VUS": 3625
   },
-  "Likely_Pathogenic": {
-   "Pathogenic": 330,
-   "Likely_Pathogenic": 982,
-   "VUS": 1024,
-   "Likely_Benign": 3,
-   "Benign": 0
+  "pathogenic_detection": {
+    "sensitivity": 0.4731,
+    "specificity": 0.9465,
+    "ppv": 0.9163,
+    "npv": 0.7154,
+    "f1": 0.624
   },
-  "VUS": {
-   "Pathogenic": 93,
-   "Likely_Pathogenic": 619,
-   "VUS": 2823,
-   "Likely_Benign": 90,
-   "Benign": 0
+  "benign_detection": {
+    "sensitivity": 0.3514,
+    "ppv": 0.8606
   },
-  "Likely_Benign": {
-   "Pathogenic": 2,
-   "Likely_Pathogenic": 10,
-   "VUS": 2532,
-   "Likely_Benign": 163,
-   "Benign": 4
+  "agreement": {
+    "exact_concordance": 0.3211,
+    "binary_concordance": 0.5209,
+    "cohens_kappa_5tier": 0.1348,
+    "cohens_kappa_binary": 0.984
   },
-  "Benign": {
-   "Pathogenic": 1,
-   "Likely_Pathogenic": 9,
-   "VUS": 915,
-   "Likely_Benign": 797,
-   "Benign": 800
+  "confusion_matrix": {
+    "Pathogenic": {
+      "Pathogenic": 459,
+      "Likely_Pathogenic": 1974,
+      "VUS": 1695,
+      "Likely_Benign": 9,
+      "Benign": 0
+    },
+    "Likely_Pathogenic": {
+      "Pathogenic": 263,
+      "Likely_Pathogenic": 368,
+      "VUS": 1702,
+      "Likely_Benign": 6,
+      "Benign": 0
+    },
+    "VUS": {
+      "Pathogenic": 80,
+      "Likely_Pathogenic": 178,
+      "VUS": 3084,
+      "Likely_Benign": 283,
+      "Benign": 0
+    },
+    "Likely_Benign": {
+      "Pathogenic": 1,
+      "Likely_Pathogenic": 8,
+      "VUS": 2485,
+      "Likely_Benign": 213,
+      "Benign": 4
+    },
+    "Benign": {
+      "Pathogenic": 1,
+      "Likely_Pathogenic": 12,
+      "VUS": 887,
+      "Likely_Benign": 822,
+      "Benign": 800
+    }
   }
- }
 }

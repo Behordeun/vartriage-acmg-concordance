@@ -1,0 +1,53 @@
+{
+  "description": "2x2 isolation of PM2 strength vs PVS1 gate on the ClinGen eRepo benchmark. All cells use strict point-system combining, full evidence, cohort n=15334, expert P/LP denominator=6476. Only two dials vary: PM2 strength (Moderate vs Supporting) and the PVS1 Very-Strong gate (buggy pLI vs fixed ClinGen-curated LoF mechanism). gnomAD/VEP/REVEL inputs identical (shared SQLite cache).",
+  "denominator_expert_P_LP": 6476,
+  "cohort": 15334,
+  "combining": "strict",
+  "cells": {
+    "v0.18.2_moderate_buggy_pvs1": {
+      "label": "Published baseline (v0.18.2)",
+      "pm2": "Moderate",
+      "pvs1_gate": "buggy pLI",
+      "sensitivity": 0.696,
+      "ppv": 0.86,
+      "true_positives": 4507,
+      "source": "results/concordance_pointsystem.json"
+    },
+    "v1.2.0_supporting_fixed_pvs1": {
+      "label": "Shipped v1.2.0 headline",
+      "pm2": "Supporting",
+      "pvs1_gate": "fixed ClinGen LoF mechanism",
+      "sensitivity": 0.4731,
+      "ppv": 0.9163,
+      "true_positives": 3064,
+      "source": "results/erepo_strict.json"
+    },
+    "counterfactual_moderate_fixed_pvs1": {
+      "label": "Counterfactual: v0.18.2 config WITH the PVS1 fix",
+      "pm2": "Moderate",
+      "pvs1_gate": "fixed ClinGen LoF mechanism",
+      "sensitivity": 0.6709,
+      "ppv": 0.878,
+      "true_positives": 4345,
+      "false_positives": 604,
+      "pvs1_very_strong": 2585,
+      "pvs1_strong": 433,
+      "source": "results/erepo_cf_pm2moderate_fixedpvs1.json"
+    }
+  },
+  "axis_decomposition": {
+    "pvs1_fix_effect_at_moderate": {
+      "from": 0.696,
+      "to": 0.6709,
+      "delta_pp": -2.5,
+      "note": "Holding PM2 at Moderate, applying the correct PVS1 gate moves sensitivity 69.6% -> 67.1%. The fix is nearly sensitivity-neutral at Moderate: it reclassifies which variants reach Very Strong but does not materially change the P/LP count, because at Moderate most LoF variants already cleared the Likely-Pathogenic threshold through PM2's extra point. PPV rises slightly (0.86 -> 0.878)."
+    },
+    "pm2_strength_effect_with_fixed_pvs1": {
+      "from": 0.6709,
+      "to": 0.4731,
+      "delta_pp": -19.8,
+      "note": "Holding the PVS1 gate correct, moving PM2 Moderate -> Supporting is the dominant driver: 67.1% -> 47.3%. This is the real, guideline-concordant conservatism of PM2 at Supporting under strict combining."
+    }
+  },
+  "conclusion": "v0.18.2 had no sensitivity-inflating bug. Its 69.6% is a faithful measurement; with the PVS1 fix applied to the same config it would have scored 67.1% (nearly identical). The 69.6% -> 47.3% headline drop is almost entirely the deliberate PM2 Moderate -> Supporting calibration (-19.8pp), not the PVS1 correction (-2.5pp). The PVS1 bug was a correctness defect in the Very-Strong tier distribution, not a sensitivity error; at Moderate it was masked because PM2's point already carried most LoF variants over the LP line."
+}

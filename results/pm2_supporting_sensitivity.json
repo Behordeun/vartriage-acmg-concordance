@@ -1,0 +1,5487 @@
+{
+  "total_variants": 21506,
+  "replay_exact": false,
+  "replay_mismatches": 6178,
+  "pm2_carriers": 15188,
+  "changed": 390,
+  "movement": {
+    "Pathogenic->Likely_Pathogenic": 390
+  },
+  "lp_to_vus": 0,
+  "base_dist": {
+    "Likely_Pathogenic": 5943,
+    "Pathogenic": 396,
+    "VUS": 10187,
+    "Benign": 304,
+    "Likely_Benign": 9
+  },
+  "new_dist": {
+    "Pathogenic": 5697,
+    "VUS": 10204,
+    "Likely_Pathogenic": 414,
+    "Likely_Benign": 220,
+    "Benign": 304
+  },
+  "moved_detail": [
+    {
+      "gene": "RPE65",
+      "pos": 68429781,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RPE65",
+      "pos": 68431117,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RPE65",
+      "pos": 68431316,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RPE65",
+      "pos": 68439196,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RPE65",
+      "pos": 68439634,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171635973,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171635988,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171636082,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171636354,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171636430,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171636595,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171636617,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOCOS",
+      "pos": 171636698,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOC",
+      "pos": 171652012,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOC",
+      "pos": 171652085,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOC",
+      "pos": 171652236,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOC",
+      "pos": 171652253,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOC",
+      "pos": 171652539,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYOC",
+      "pos": 171652545,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SERPINC1",
+      "pos": 173904036,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "USH2A",
+      "pos": 216199889,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACTA1",
+      "pos": 229431540,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "DCLRE1C",
+      "pos": 14908817,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PTEN",
+      "pos": 87933025,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PTEN",
+      "pos": 87933200,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PTEN",
+      "pos": 87957913,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PTEN",
+      "pos": 87957977,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PTEN",
+      "pos": 87960976,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PTEN",
+      "pos": 87965389,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HRAS",
+      "pos": 533301,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": "Benign"
+    },
+    {
+      "gene": "ATM",
+      "pos": 108365479,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PAH",
+      "pos": 102840408,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PAH",
+      "pos": 102840432,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PAH",
+      "pos": 102843667,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PAH",
+      "pos": 102844343,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PAH",
+      "pos": 102844353,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A-AS1",
+      "pos": 120978936,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A-AS1",
+      "pos": 120978953,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A-AS1",
+      "pos": 120978970,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A-AS1",
+      "pos": 120979049,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A-AS1",
+      "pos": 120979079,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120988847,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120988867,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120988903,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120988930,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120989002,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120993574,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120993605,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120993688,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120994169,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120994237,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120994259,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120994311,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120994311,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120996285,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120997522,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 120999579,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 121001067,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 121001080,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 121001097,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 121001098,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 121001113,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 121001135,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF1A",
+      "pos": 121001148,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "BRCA2",
+      "pos": 32398209,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "BRCA2",
+      "pos": 32398452,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYH7",
+      "pos": 23428599,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MYH7",
+      "pos": 23432683,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "DICER1",
+      "pos": 95091238,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "DICER1",
+      "pos": 95094116,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "DICER1",
+      "pos": 95107726,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "DICER1",
+      "pos": 95126605,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000258461",
+      "pos": 42360022,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000258461",
+      "pos": 42410982,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GATM",
+      "pos": 45362171,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GATM",
+      "pos": 45366064,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "FBN1",
+      "pos": 48411189,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "FBN1",
+      "pos": 48467984,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "FBN1",
+      "pos": 48496154,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "FBN1",
+      "pos": 48503847,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "FBN1",
+      "pos": 48534136,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "POLG",
+      "pos": 89317388,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "POLG",
+      "pos": 89317406,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PALB2",
+      "pos": 23603476,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PALB2",
+      "pos": 23603507,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PALB2",
+      "pos": 23603657,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CDH1",
+      "pos": 68829739,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CDH1",
+      "pos": 68829742,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CDH1",
+      "pos": 68833339,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CDH1",
+      "pos": 68833354,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CDH1",
+      "pos": 68833375,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CDH1",
+      "pos": 68833397,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CDH1",
+      "pos": 68833398,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932624,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932694,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932706,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932756,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932764,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932800,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932839,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932869,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932878,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932880,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932943,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4932989,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933222,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933533,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933543,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933555,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933613,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933613,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933666,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933679,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933682,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933697,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4933856,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4934035,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4934035,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4934068,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4934195,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CHRNE",
+      "pos": 4934205,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "AIPL1",
+      "pos": 6425487,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "AIPL1",
+      "pos": 6435070,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220135,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220154,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220159,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220182,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220467,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220511,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220511,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220608,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220662,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220794,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220794,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220800,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220820,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220967,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7220997,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7221556,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222015,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222193,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222220,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222231,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222276,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222287,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222288,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222674,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222711,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222718,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222782,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222794,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222825,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7222843,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7223156,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7223711,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7223853,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7223853,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224002,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224008,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224020,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224043,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224379,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224645,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224684,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224690,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224692,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224854,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224860,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224863,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7224864,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7225010,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7225019,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ACADVL",
+      "pos": 7225024,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "TP53",
+      "pos": 7669611,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "TP53",
+      "pos": 7669644,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "TP53",
+      "pos": 7669650,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "TP53",
+      "pos": 7669672,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GUCY2D",
+      "pos": 8003125,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28530823,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534411,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534738,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534840,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534863,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534881,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534933,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534959,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28534986,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28535148,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28535154,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RSKR",
+      "pos": 28537334,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "BRCA1",
+      "pos": 43095893,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44372364,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44372390,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44372391,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44372392,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374396,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374421,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374422,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374438,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374671,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374686,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374699,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44374749,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44375955,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44377710,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44377715,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGA2B",
+      "pos": 44378482,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGB3",
+      "pos": 47253911,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGB3",
+      "pos": 47283512,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGB3",
+      "pos": 47284647,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGB3",
+      "pos": 47292416,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ITGB3",
+      "pos": 47307552,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SGCA",
+      "pos": 50175422,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80104640,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80104837,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80104866,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80104927,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80104961,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80104976,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80105032,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80105052,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80107598,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80107630,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80107631,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80107668,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80108362,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80108511,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80108539,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80110954,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80110991,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80112035,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80112669,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80113237,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80113333,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80117634,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80118294,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80118327,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAA",
+      "pos": 80118742,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAMT",
+      "pos": 1397401,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAMT",
+      "pos": 1397459,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAMT",
+      "pos": 1397474,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAMT",
+      "pos": 1398959,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAMT",
+      "pos": 1399138,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAMT",
+      "pos": 1399145,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GAMT",
+      "pos": 1401385,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "LDLR",
+      "pos": 11110671,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "LDLR",
+      "pos": 11116980,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "LDLR",
+      "pos": 11123318,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "LDLR",
+      "pos": 11129519,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "LDLR",
+      "pos": 11129563,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "CYP1B1",
+      "pos": 38070756,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MSH2",
+      "pos": 47482940,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MSH6",
+      "pos": 47806841,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "DYSF",
+      "pos": 71686463,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "NEB",
+      "pos": 151709675,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SCN1A-AS1",
+      "pos": 165991477,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SCN1A-AS1",
+      "pos": 165991763,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "BMPR2",
+      "pos": 202464972,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF4A",
+      "pos": 44406107,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF4A",
+      "pos": 44407437,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF4A",
+      "pos": 44414569,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF4A",
+      "pos": 44418502,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "HNF4A",
+      "pos": 44424249,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792144,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792163,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792164,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792214,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792282,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792294,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792300,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792300,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792306,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792314,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792315,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792341,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792346,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792357,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792360,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792361,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792363,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792367,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792367,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792374,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792376,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792403,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792413,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792432,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792467,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792477,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792483,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792541,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792541,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792541,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792544,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792578,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34792594,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34799310,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34799315,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34799356,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34799363,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34799411,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34799447,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34799454,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34821685,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34834413,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34834414,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34834432,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34859535,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34880669,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34880708,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34886854,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 34886940,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 35048845,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 35048852,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 35048854,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 35048885,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RUNX1",
+      "pos": 35048892,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SEPTIN5",
+      "pos": 19724154,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000284874",
+      "pos": 19724285,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000284874",
+      "pos": 19724308,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000284874",
+      "pos": 19724333,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MLH1",
+      "pos": 37050632,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MLH1",
+      "pos": 37050643,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GP9",
+      "pos": 129061730,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GP9",
+      "pos": 129061854,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GP9",
+      "pos": 129062172,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GP9",
+      "pos": 129062176,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "IDUA",
+      "pos": 1002318,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "IDUA",
+      "pos": 1002377,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "IDUA",
+      "pos": 1002781,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "IDUA",
+      "pos": 1003418,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "IDUA",
+      "pos": 1003460,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "IDUA",
+      "pos": 1004082,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SGCB",
+      "pos": 52028018,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "APC",
+      "pos": 112754919,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "APC",
+      "pos": 112766344,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "APC",
+      "pos": 112819271,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "APC",
+      "pos": 112843387,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "APC",
+      "pos": 112843392,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "APC",
+      "pos": 112843555,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "APC",
+      "pos": 112844079,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145141,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145142,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145160,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145170,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145171,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145182,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145185,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145186,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145201,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145202,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145214,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145227,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145228,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145233,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145249,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145250,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145254,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145261,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145580,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145594,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145600,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145616,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44145695,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44147716,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "GCK",
+      "pos": 44149765,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "RS1",
+      "pos": 18656705,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38285599,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38285964,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38286160,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38286538,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38286701,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38286726,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38310737,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38321030,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38323517,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "ENSG00000250349",
+      "pos": 38327343,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MTM1",
+      "pos": 150671571,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PNCK",
+      "pos": 153688627,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "PNCK",
+      "pos": 153688662,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SLC6A8",
+      "pos": 153691405,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SLC6A8",
+      "pos": 153691534,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SLC6A8",
+      "pos": 153692074,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SLC6A8",
+      "pos": 153693287,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SLC6A8",
+      "pos": 153693292,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "SLC6A8",
+      "pos": 153694381,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MECP2",
+      "pos": 154030619,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MECP2",
+      "pos": 154030623,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MECP2",
+      "pos": 154030629,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    },
+    {
+      "gene": "MECP2",
+      "pos": 154030655,
+      "consequence": "Frameshift",
+      "tags": [
+        "PM2",
+        "PVS1"
+      ],
+      "base_points": 10,
+      "new_points": 9,
+      "from": "Pathogenic",
+      "to": "Likely_Pathogenic",
+      "clinvar": null
+    }
+  ]
+}

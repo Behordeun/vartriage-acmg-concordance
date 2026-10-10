@@ -1,0 +1,151 @@
+{
+  "total_variants": 15334,
+  "per_consequence": {
+    "Missense": {
+      "count": 7920,
+      "expert_P_LP": 3319,
+      "path_tp": 35,
+      "expert_B_LB": 1594,
+      "ben_tp": 310,
+      "path_sensitivity": 0.0105,
+      "ben_sensitivity": 0.1945
+    },
+    "Splice_Site": {
+      "count": 1410,
+      "expert_P_LP": 918,
+      "path_tp": 711,
+      "expert_B_LB": 285,
+      "ben_tp": 57,
+      "path_sensitivity": 0.7745,
+      "ben_sensitivity": 0.2
+    },
+    "Synonymous": {
+      "count": 3741,
+      "expert_P_LP": 104,
+      "path_tp": 0,
+      "expert_B_LB": 3329,
+      "ben_tp": 1127,
+      "path_sensitivity": 0.0,
+      "ben_sensitivity": 0.3385
+    },
+    "Nonsense": {
+      "count": 2238,
+      "expert_P_LP": 2134,
+      "path_tp": 1737,
+      "expert_B_LB": 16,
+      "ben_tp": 0,
+      "path_sensitivity": 0.814,
+      "ben_sensitivity": 0.0
+    },
+    "Intergenic": {
+      "count": 25,
+      "expert_P_LP": 1,
+      "path_tp": 0,
+      "expert_B_LB": 9,
+      "ben_tp": 8,
+      "path_sensitivity": 0.0,
+      "ben_sensitivity": 0.8889
+    }
+  },
+  "data_coverage": {
+    "revel_matched": 0,
+    "revel_coverage_pct": 0.0,
+    "gnomad_matched": 15334
+  },
+  "expert_distribution": {
+    "Pathogenic": 4137,
+    "VUS": 3625,
+    "Likely_Benign": 2711,
+    "Benign": 2522,
+    "Likely_Pathogenic": 2339
+  },
+  "vartriage_distribution": {
+    "VUS": 11191,
+    "Likely_Pathogenic": 1875,
+    "Benign": 804,
+    "Pathogenic": 744,
+    "Likely_Benign": 720
+  },
+  "pathogenic_detection": {
+    "expert_P_LP_count": 6476,
+    "true_positives": 2483,
+    "false_negatives": 3993,
+    "false_positives": 136,
+    "sensitivity": 0.3834,
+    "ppv": 0.9481
+  },
+  "benign_detection": {
+    "expert_B_LB_count": 5233,
+    "true_positives": 1502,
+    "false_negatives": 3731,
+    "false_positives": 22,
+    "sensitivity": 0.287,
+    "ppv": 0.9856
+  },
+  "overall": {
+    "exact_concordance": 0.3175,
+    "binary_concordance": 0.4872
+  },
+  "confusion_matrix": {
+    "Pathogenic": {
+      "Pathogenic": 428,
+      "Likely_Pathogenic": 1697,
+      "VUS": 2008,
+      "Likely_Benign": 4,
+      "Benign": 0
+    },
+    "Likely_Pathogenic": {
+      "Pathogenic": 252,
+      "Likely_Pathogenic": 106,
+      "VUS": 1981,
+      "Likely_Benign": 0,
+      "Benign": 0
+    },
+    "VUS": {
+      "Pathogenic": 63,
+      "Likely_Pathogenic": 59,
+      "VUS": 3485,
+      "Likely_Benign": 18,
+      "Benign": 0
+    },
+    "Likely_Benign": {
+      "Pathogenic": 0,
+      "Likely_Pathogenic": 6,
+      "VUS": 2651,
+      "Likely_Benign": 50,
+      "Benign": 4
+    },
+    "Benign": {
+      "Pathogenic": 1,
+      "Likely_Pathogenic": 7,
+      "VUS": 1066,
+      "Likely_Benign": 648,
+      "Benign": 800
+    }
+  },
+  "evidence_tag_distribution": {
+    "PM2": 11164,
+    "PVS1": 2585,
+    "PM1": 1399,
+    "PP3": 1148,
+    "PM5": 953,
+    "BA1": 804,
+    "BS1": 725,
+    "PVS1_Strong": 433,
+    "PS1": 113
+  },
+  "vartriage_version": "1.2.0",
+  "dataset": "ClinGen eRepo (>=3-star SNVs), gnomAD GraphQL API + Ensembl VEP + REVEL",
+  "configuration": {
+    "relaxed_combining": false,
+    "skip_gnomad": false,
+    "skip_vep": false,
+    "gnomad_absent_as_pm2": true,
+    "spliceai_file": "data/erepo/spliceai_erepo.tsv",
+    "spliceai_count": 2097,
+    "clinvar_protein_index": "../vartriage/data/references/clinvar_protein_index.tsv",
+    "gene_constraint_enabled": true,
+    "knowledge_dir": "../vartriage/data/references/knowledge_full",
+    "limit": null
+  }
+}

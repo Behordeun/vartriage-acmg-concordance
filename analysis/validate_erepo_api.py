@@ -116,6 +116,7 @@ _CLASSIFICATION_NORM: dict[str, str] = {
 }
 
 _PATH_TIERS = frozenset({"Pathogenic", "Likely_Pathogenic"})
+_BENIGN_TIERS = frozenset({"Benign", "Likely_Benign"})
 _BEN_TIERS = frozenset({"Likely_Benign", "Benign"})
 _ALL_TIERS = ["Pathogenic", "Likely_Pathogenic", "VUS", "Likely_Benign", "Benign"]
 
@@ -445,8 +446,22 @@ def classify_variants(
     protein_index: Optional[ClinVarProteinIndex] = None,
     registry: Optional[GeneKnowledgeRegistry] = None,
 ) -> list[ClassifiedVariant]:
-    """Run all variants through vartriage's ACMGClassifier."""
-    classifier = ACMGClassifier(protein_index=protein_index)
+    """Run all variants through vartriage's ACMGClassifier.
+
+    PVS1 Very Strong is gated on the bundled ClinGen-curated LoF-mechanism gene
+    set (v1.2.0+), matching the production pipeline, so the benchmark measures
+    the shipped classifier rather than the pre-fix pLI gate.
+    """
+    from vartriage.knowledge.lof_mechanism import (
+        LofMechanismGeneSet,
+        default_lof_mechanism_path,
+    )
+
+    lof_genes = LofMechanismGeneSet(default_lof_mechanism_path()).genes
+    classifier = ACMGClassifier(
+        protein_index=protein_index,
+        lof_gene_list=lof_genes if lof_genes else None,
+    )
 
     if protein_changes is None:
         protein_changes = [None] * len(variants)
@@ -672,16 +687,26 @@ def compute_metrics(
     # Per-consequence P/LP stratification (expert P/LP only), keyed on VEP consequence.
     per_consequence: dict[str, dict[str, int | float]] = {}
     for v, cv in zip(variants, classified):
-        if v.expert_classification not in _PATH_TIERS:
-            continue
         csq = cv.scored.annotated.consequence.value
-        bucket = per_consequence.setdefault(csq, {"expert_P_LP": 0, "path_tp": 0})
-        bucket["expert_P_LP"] += 1
-        if cv.classification.value in _PATH_TIERS:
-            bucket["path_tp"] += 1
+        is_plp = v.expert_classification in _PATH_TIERS
+        is_blb = v.expert_classification in _BENIGN_TIERS
+        bucket = per_consequence.setdefault(
+            csq, {"count": 0, "expert_P_LP": 0, "path_tp": 0, "expert_B_LB": 0, "ben_tp": 0}
+        )
+        bucket["count"] += 1
+        if is_plp:
+            bucket["expert_P_LP"] += 1
+            if cv.classification.value in _PATH_TIERS:
+                bucket["path_tp"] += 1
+        elif is_blb:
+            bucket["expert_B_LB"] += 1
+            if cv.classification.value in _BENIGN_TIERS:
+                bucket["ben_tp"] += 1
     for csq, b in per_consequence.items():
         n = b["expert_P_LP"]
         b["path_sensitivity"] = round(b["path_tp"] / n, 4) if n else 0.0
+        nb = b["expert_B_LB"]
+        b["ben_sensitivity"] = round(b["ben_tp"] / nb, 4) if nb else 0.0
 
     return {
         "total_variants": total,

@@ -104,8 +104,8 @@ def figure_confusion_matrix() -> None:
             if matrix[i, j] > 0:
                 ax.text(
                     j + 0.5, i + 0.78, f"n={matrix[i, j]}",
-                    ha="center", va="center", fontsize=6,
-                    color="gray" if matrix_pct[i, j] < 50 else "lightgray",
+                    ha="center", va="center", fontsize=7,
+                    color="white" if matrix_pct[i, j] >= 50 else "#222222",
                 )
 
     ax.set_xlabel("VarTriage classification")
@@ -182,8 +182,11 @@ def figure_ablation() -> None:
     """Horizontal bar chart showing sensitivity change when each source is removed."""
     data = load_results("ablation.json")
 
-    # Exclude baseline from the chart
-    configs = [(k, v) for k, v in data.items() if k != "baseline"]
+    # Exclude baseline and the compound "Minimal" config (its pathogenic-sensitivity
+    # delta duplicates No-VEP, since removing VEP alone already collapses the signal;
+    # the chart shows the three single-source removals the caption describes).
+    _skip = {"baseline", "no_gnomad_no_vep"}
+    configs = [(k, v) for k, v in data.items() if k not in _skip]
     configs.sort(key=lambda x: x[1].get("delta_path_sensitivity", 0))
 
     names = []
@@ -207,10 +210,17 @@ def figure_ablation() -> None:
 
     # Value labels
     for i, (bar, delta) in enumerate(zip(bars, deltas)):
-        offset = 1.0 if delta < 0 else -1.0
-        ha = "left" if delta < 0 else "right"
-        ax.text(delta + offset, i, f"{delta:+.1f}pp", va="center", ha=ha,
-                fontsize=7, color=COLORS["neutral"])
+        # Place each label just OUTSIDE the bar end so it reads against the white
+        # background rather than the dark fill. Negative bars extend left, so the
+        # label goes to their left; the near-zero bar labels just right of zero.
+        if delta <= -0.05:
+            x = delta - 1.0
+            ha = "right"
+        else:
+            x = 0.6
+            ha = "left"
+        ax.text(x, i, f"{delta:+.1f}pp", va="center", ha=ha,
+                fontsize=8, fontweight="bold", color="#222222")
 
     # Baseline annotation
     baseline_sens = data["baseline"]["path_sensitivity"] * 100
@@ -220,7 +230,7 @@ def figure_ablation() -> None:
             bbox={"boxstyle": "round,pad=0.3", "facecolor": "lightyellow",
                   "edgecolor": "gray", "linewidth": 0.5})
 
-    ax.set_xlim(min(deltas) - 5, max(deltas) + 8)
+    ax.set_xlim(min(deltas) - 9, max(deltas) + 6)
 
     fig.savefig(FIGURES_DIR / "fig3_ablation.pdf")
     plt.close(fig)
@@ -270,7 +280,7 @@ def figure_tag_frequency() -> None:
         pct = count / total * 100
         if pct > 3:
             ax.text(i, count + 100, f"{pct:.0f}%", ha="center", va="bottom",
-                    fontsize=6, color=COLORS["neutral"])
+                    fontsize=7, fontweight="bold", color="#222222")
 
     fig.savefig(FIGURES_DIR / "fig4_tag_frequency.pdf")
     plt.close(fig)
@@ -317,8 +327,8 @@ def figure_consequence_odds() -> None:
     # Annotations: sample sizes
     for i, (name, or_val, plp, blb) in enumerate(items):
         label = f"P/LP={plp}, B/LB={blb}"
-        ax.text(max(ors) * 1.1, i, label, va="center", fontsize=6,
-                color=COLORS["neutral"])
+        ax.text(max(ors) * 1.1, i, label, va="center", fontsize=7,
+                fontweight="bold", color="#222222")
 
     ax.set_xlim(0.005, max(ors) * 30)
 
@@ -367,12 +377,14 @@ def figure_tool_comparison() -> None:
         h = bar.get_height()
         if h > 0:
             ax.text(bar.get_x() + bar.get_width() / 2, h + 1, f"{h:.1f}%",
-                    ha="center", va="bottom", fontsize=7)
+                    ha="center", va="bottom", fontsize=7, fontweight="bold",
+                    color="#222222")
     for bar in bars2:
         h = bar.get_height()
         if h > 0:
             ax.text(bar.get_x() + bar.get_width() / 2, h + 1, f"{h:.1f}%",
-                    ha="center", va="bottom", fontsize=7)
+                    ha="center", va="bottom", fontsize=7, fontweight="bold",
+                    color="#222222")
 
     fig.savefig(FIGURES_DIR / "fig6_tool_comparison.pdf")
     plt.close(fig)
